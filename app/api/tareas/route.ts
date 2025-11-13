@@ -20,4 +20,6 @@ export async function DELETE(req: Request) {
   const { id } = await req.json();
   tareas = tareas.filter(tarea => tarea.id !== id);
   return NextResponse.json({ success: true });
-}
+} 
+
+// 
